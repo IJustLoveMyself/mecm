@@ -1,0 +1,161 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 111 Administrator, 111, LIC=IK1BF-6G7Q6-BSMYX-H5J36-IIFFQ-0W50L
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.23
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DCM.DLL V1.15.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.23.0
+Dialog DLL:      TCM.DLL V1.27.0.0
+ 
+<h2>Project:</h2>
+F:\ny\学习\自建极简Ethercat主站-mecm\源码\mecm\test\GD32F450Z_EVAL\USER\mecm_test.uvprojx
+Project File Date:  11/01/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'mecm_test'
+compiling mecm_coe.c...
+compiling mecm_dc.c...
+..\..\..\inc\mecm_dc.h(46): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\src\mecm_dc.c(235): warning:  #940-D: missing return statement at end of non-void function "mecm_dc_get_topology" 
+  }
+..\..\..\src\mecm_dc.c(353): warning:  #940-D: missing return statement at end of non-void function "mecm_dc_get_delaytime" 
+  }
+..\..\..\src\mecm_dc.c(250): warning:  #177-D: variable "mastertime"  was declared but never referenced
+      uint64_t mastertime = 0;
+..\..\..\src\mecm_dc.c(262): warning:  #550-D: variable "wkc"  was set but never used
+      int wkc = 0;
+..\..\..\src\mecm_dc.c(388): warning:  #940-D: missing return statement at end of non-void function "mecm_dc_get_offset" 
+  }
+..\..\..\src\mecm_dc.c(372): warning:  #550-D: variable "wkc"  was set but never used
+      int wkc = 0;
+..\..\..\src\mecm_dc.c(456): warning:  #1-D: last line of file ends without a newline
+  }
+..\..\..\src\mecm_dc.c(428): warning:  #550-D: variable "wkc"  was set but never used
+      int wkc;
+..\..\..\src\mecm_dc.c: 9 warnings, 0 errors
+compiling mecm_eeprom.c...
+compiling mecm_base.c...
+compiling mecm_config.c...
+..\..\..\src\mecm_config.c(177): warning:  #177-D: variable "i"  was declared but never referenced
+      uint8_t i = 0;
+..\..\..\src\mecm_config.c(520): warning:  #940-D: missing return statement at end of non-void function "mecm_set_sm_fmmu_pdo" 
+  }
+..\..\..\src\mecm_config.c(511): warning:  #550-D: variable "wkc"  was set but never used
+      int wkc = 0;
+..\..\..\src\mecm_config.c: 3 warnings, 0 errors
+compiling mecm_fmmu.c...
+compiling mecm_mailbox.c...
+compiling mecm_pdo.c...
+..\..\..\src\mecm_pdo.c(159): warning:  #223-D: function "memcpy" declared implicitly
+          memcpy(bufaddr,&(mecm_port.mecm_recvbuf[idx].datagram[10]),dctimeroffset-16-10-2);
+..\..\..\src\mecm_pdo.c: 1 warning, 0 errors
+compiling mecm_sm.c...
+compiling mecm_foe.c...
+..\..\..\inc\mecm_foe.h(99): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\src\mecm_foe.c(70): warning:  #223-D: function "memset" declared implicitly
+              memset((uint8_t *)&smconfig,0,sizeof(mecm_sm_reg_t));
+..\..\..\src\mecm_foe.c(84): warning:  #223-D: function "memset" declared implicitly
+              memset((uint8_t *)&smconfig,0,sizeof(mecm_sm_reg_t));
+..\..\..\src\mecm_foe.c(197): warning:  #223-D: function "memset" declared implicitly
+      memset(&senddata,0,sizeof(_foe_data_t));
+..\..\..\src\mecm_foe.c(206): warning:  #223-D: function "strlen" declared implicitly
+      size = (uint16_t)strlen(mecm_foe_filename);
+..\..\..\src\mecm_foe.c(225): warning:  #223-D: function "memcpy" declared implicitly
+      memcpy(senddata.data,mecm_foe_filename,size);
+..\..\..\src\mecm_foe.c(258): warning:  #111-D: statement is unreachable
+                      break;
+..\..\..\src\mecm_foe.c(262): warning:  #111-D: statement is unreachable
+                      break;
+..\..\..\src\mecm_foe.c(301): warning:  #223-D: function "memset" declared implicitly
+      memset(&senddata,0,sizeof(_foe_data_t));
+..\..\..\src\mecm_foe.c(310): warning:  #223-D: function "strlen" declared implicitly
+      size = (uint16_t)strlen(mecm_foe_filename);
+..\..\..\src\mecm_foe.c(329): warning:  #223-D: function "memcpy" declared implicitly
+      memcpy(senddata.data,mecm_foe_filename,size);
+..\..\..\src\mecm_foe.c(353): warning:  #111-D: statement is unreachable
+                      break;
+..\..\..\src\mecm_foe.c(357): warning:  #111-D: statement is unreachable
+                      break;
+..\..\..\src\mecm_foe.c(397): warning:  #223-D: function "memset" declared implicitly
+      memset(&senddata,0,sizeof(_foe_data_t));
+..\..\..\src\mecm_foe.c(425): warning:  #223-D: function "memcpy" declared implicitly
+      memcpy(senddata.data,mecm_foe_buf,size);
+..\..\..\src\mecm_foe.c(454): warning:  #111-D: statement is unreachable
+                      break;
+..\..\..\src\mecm_foe.c(458): warning:  #111-D: statement is unreachable
+                      break;
+..\..\..\src\mecm_foe.c(462): warning:  #111-D: statement is unreachable
+                      break;
+..\..\..\src\mecm_foe.c(392): warning:  #177-D: variable "datalen"  was declared but never referenced
+      uint16_t datalen = 0;
+..\..\..\src\mecm_foe.c(500): warning:  #223-D: function "memset" declared implicitly
+      memset(&senddata,0,sizeof(_foe_data_t));
+..\..\..\src\mecm_foe.c(541): warning:  #223-D: function "memcpy" declared implicitly
+                          memcpy(mecm_foe_buf,recvdata.data,datalen);
+..\..\..\src\mecm_foe.c(555): warning:  #111-D: statement is unreachable
+                      break;
+..\..\..\src\mecm_foe.c(559): warning:  #111-D: statement is unreachable
+                      break;
+..\..\..\src\mecm_foe.c(495): warning:  #177-D: variable "size"  was declared but never referenced
+      uint16_t size = 0;
+..\..\..\src\mecm_foe.c(597): warning:  #223-D: function "memset" declared implicitly
+      memset(&senddata,0,sizeof(_foe_data_t));
+..\..\..\src\mecm_foe.c(591): warning:  #550-D: variable "wkc"  was set but never used
+      int wkc = 0;
+..\..\..\src\mecm_foe.c(592): warning:  #177-D: variable "size"  was declared but never referenced
+      uint16_t size = 0;
+..\..\..\src\mecm_foe.c(593): warning:  #177-D: variable "datalen"  was declared but never referenced
+      uint16_t datalen = 0;
+..\..\..\src\mecm_foe.c(594): warning:  #550-D: variable "maxsize"  was set but never used
+      uint16_t maxsize = 0;
+..\..\..\src\mecm_foe.c(641): warning:  #223-D: function "memset" declared implicitly
+      memset(&senddata,0,sizeof(_foe_data_t));
+..\..\..\src\mecm_foe.c(657): warning:  #223-D: function "memcpy" declared implicitly
+      memcpy(senddata.data,mecm_foe_buf,mecm_foe_retry_len);
+..\..\..\src\mecm_foe.c(685): warning:  #111-D: statement is unreachable
+                      break;
+..\..\..\src\mecm_foe.c(689): warning:  #111-D: statement is unreachable
+                      break;
+..\..\..\src\mecm_foe.c(693): warning:  #111-D: statement is unreachable
+                      break;
+..\..\..\src\mecm_foe.c(635): warning:  #177-D: variable "size"  was declared but never referenced
+      uint16_t size = 0;
+..\..\..\src\mecm_foe.c(636): warning:  #177-D: variable "datalen"  was declared but never referenced
+      uint16_t datalen = 0;
+..\..\..\src\mecm_foe.c(637): warning:  #177-D: variable "maxsize"  was declared but never referenced
+      uint16_t maxsize = 0;
+..\..\..\src\mecm_foe.c(588): warning:  #177-D: function "mecm_foe_err"  was declared but never referenced
+  static int mecm_foe_err(uint16_t slave,int timeout)
+..\..\..\src\mecm_foe.c: 38 warnings, 0 errors
+compiling md_app.c...
+compiling mecm_port.c...
+linking...
+Program Size: Code=17876 RO-data=460 RW-data=96 ZI-data=38816  
+FromELF: creating hex file...
+".\Objects\fuxi.axf" - 0 Error(s), 51 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_mecm_test
+  D:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

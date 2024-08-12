@@ -1,0 +1,8 @@
+.vscode
+test/GD32F450Z_EVAL/USER/Listings/*.o
+test/GD32F450Z_EVAL/USER/Objects/*.o
+test/GD32F450Z_EVAL/USER/Objects/*.d
+test/GD32F450Z_EVAL/USER/Objects/*.crf
+test/GD32F450Z_EVAL/USER/EventRecorderStub.scvd
+test/GD32F450Z_EVAL/USER/JLinkLog.txt
+test/GD32F450Z_EVAL/USER/JLinkSettings.ini
